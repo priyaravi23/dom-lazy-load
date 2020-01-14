@@ -19,6 +19,7 @@ document.addEventListener('readystatechange', () => {
 function lazyLoad(target) {
     const obs = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
+            // if the entry is within the browser’s viewport
             if (entry.isIntersecting) {
                 const img = entry.target;
                 const src = img.getAttribute('data-lazy');

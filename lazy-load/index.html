@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="lazy-load.js"></script>
+
+    <style>
+        :root {
+            --aspect: 1.49970005999;
+        }
+        img {
+            max-width: 20vw;
+        }
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+        div.lzy_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            /*width: 20em;*/
+            /*height: calc(20em / var(--aspect));*/
+            margin-bottom: 1em;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lazy Loading Images Using Intersection Observer</h1>
+
+    <div class="container">
+
+    </div>
+</body>
+</html>

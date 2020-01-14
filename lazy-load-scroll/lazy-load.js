@@ -4,7 +4,7 @@
     const container = document.querySelector('.container');
 
     const innerHTML = srcUrls.slice(5)
-        .map(({download_url: url}, index) => `<div class="basic" data-id="${index}"></div>`)
+        .map(({download_url: url}, index) => `<div class="lzy_img" data-id="${index}"></div>`)
         .join('');
     container.innerHTML = innerHTML;
 

@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lazy Loading</title>
+    <link rel="stylesheet" href="style.css" />
+
     <script src="lazy-load.js"></script>
     <style>
         :root {
@@ -18,13 +20,13 @@
             padding: 0;
             margin: 0;
         }
-        div.basic {
+        div.lzy_img {
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: #eee;
-            width: 20em;
-            height: calc(20em / var(--aspect));
+            /*width: 20em;*/
+            /*height: calc(20em / var(--aspect));*/
             margin-bottom: 1em;
             background-size: cover;
             background-position: center center;
@@ -32,8 +34,10 @@
     </style>
 </head>
 <body>
-<div class="container">
+    <h1>Lazy Loading Images Using Scroll</h1>
 
-</div>
+    <div class="container">
+
+    </div>
 </body>
 </html>
